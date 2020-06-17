@@ -23,10 +23,29 @@ Kunci dari aturan masukkan rumus F(x) adalah berpedoman pada bentuk polinomial (
 Perkalian dapat dilakukan beberapa kali sekaligus seperti contoh berikut.  
 **Contoh** :  
 + x\*2
-+ 3 \* -2 * x
-+ 3 * x^4 * -2^1 * 0 (gunakan spasi untuk mempermudah penulisan) 
-###
++ 3 \* -2\*x
++ 3 * x^4 * -2^1 * 0 (opsional : gunakan spasi untuk mempermudah penulisan)    
+
+### Operasi Penjumlahan dan Pengurangan
+**Sintak Penjumlahan** : x\+x (dibaca x tambah x, dengan x adalah suatu variabel yg dapat diganti dengan suatu **bilangan bulat** atau dapat diganti dengan **suatu operasi perpangkatan** dan **suatu operasi perkalian**)  
+Contoh :    
+* x + x^2\*3
+* 2 + 2\*x\*3 + x^3    
+
+Untuk operasi pengurangan dilakukan dengan menggunakan sintak penjumlahan, contohnya :   
+* x+ -2
+* 2\*x^2 + -2\*x + -2 + -1\*x    
+
+Jika ingin menuliskan -x maka tuliskan -1\*x.
+
+### Beberapa Contoh Masukkan F(x)
+- 2\*x^2 + x + 1
+- x^3 + \-1\*x^2 + x + -1
+- x^4 \* x^2 + -3\*x\*x^2
+- Selebihnya, sesuaikan selera anda dengan mengikuti aturan di atas.
+
 
 ## Aturan Masukkan Interval (x)
+Sintak : a~b (artinya semua nilai x antara a dan b, dengan a, b bilangan bulat dan b > a)
 
 
