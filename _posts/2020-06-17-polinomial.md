@@ -16,9 +16,12 @@ Sebelumnya mimin ucapkan terima kasih telah berkenan menggunakan program sederha
 ## Aturan Masukkan Rumus F(x)
 Kunci dari aturan masukkan rumus F(x) adalah berpedoman pada bentuk polinomial (suku banyak). Selengkapnya sebagai berikut.
 ### Operasi Perpangkatan
-**Sintak** : x^a (dibaca x pangkat a, dengan a adalah suatu **bilangan asli** dan x adalah suatu variabel yg dapat diganti dengan suatu **bilangan bulat**)<br/>
-Contoh : x^1, x^12, 2^4, -5^6
-
+**Sintak** : x^a (dibaca x pangkat a, dengan a adalah suatu **bilangan asli** dan x adalah suatu variabel yg dapat diganti dengan suatu **bilangan bulat**)  
+**Contoh** : x^1, x^12, 2^4, -5^6
+### Operasi Perkalian
+**Sintak** : x\*x (dibaca x kali x, dengan x adalah suatu variabel yg dapat diganti dengan suatu **bilangan bulat** atau dapat diganti dengan **suatu operasi perpangkatan**)  
+Perkalian dapat dilakukan beberapa kali sekaligus seperti contoh berikut.  
+**Contoh** : x\*x\*2, 3 \* -2,
 
 ## Aturan Masukkan Interval (x)
 
