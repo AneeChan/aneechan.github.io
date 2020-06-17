@@ -11,6 +11,6 @@ published: true
 ---
 {% include JB/setup %}
 
-Sebelumnya mimin ucapkan terima kasih telah berkenan menggunakan program sederhana yang bernama **POLINOMIAL F(x)**. Kita perlu mengetahui petunjuk penggunaan program tersebut agar output yang dihasilkan sesuai yang kita harapkan. Selain itu, perlu diketahui bersama, program ini masih sederhana bahkan belum dilengkapi dengan validasi inputan. Mengingat ini hanya sebatas tugas mata kuliah mimin.. ^^
+Sebelumnya mimin ucapkan terima kasih telah berkenan menggunakan program sederhana yang bernama **POLINOMIAL F(x)**. Kita perlu mengetahui petunjuk penggunaan program tersebut agar output yang dihasilkan sesuai yang kita harapkan. Selain itu, perlu diketahui bersama, program ini masih sederhana bahkan belum dilengkapi dengan validasi inputan. Mengingat program ini hanya sebatas tugas mata kuliah mimin.. ^^
 
 
