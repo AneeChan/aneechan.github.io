@@ -16,7 +16,7 @@ Sebelumnya mimin ucapkan terima kasih telah berkenan menggunakan program sederha
 ## Aturan Masukkan Rumus F(x)
 Kunci dari aturan masukkan rumus F(x) adalah berpedoman pada bentuk polinomial (suku banyak). Selengkapnya sebagai berikut.
 ### Operasi Perpangkatan
-**Sintak** : x^a (dibaca x pangkat a, dengan a adalah suatu bilangan asli)
+**Sintak** : x^a (dibaca x pangkat a, dengan a adalah suatu **bilangan asli** dan x adalah suatu variabel yg dapat diganti dengan suatu bilangan asli)
 Mengingat f(x) adalah polinomial maka tidak berlaku penulisan a^x 
 
 
