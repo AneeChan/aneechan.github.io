@@ -21,7 +21,11 @@ Kunci dari aturan masukkan rumus F(x) adalah berpedoman pada bentuk polinomial (
 ### Operasi Perkalian
 **Sintak** : x\*x (dibaca x kali x, dengan x adalah suatu variabel yg dapat diganti dengan suatu **bilangan bulat** atau dapat diganti dengan **suatu operasi perpangkatan**)  
 Perkalian dapat dilakukan beberapa kali sekaligus seperti contoh berikut.  
-**Contoh** : x\*x\*2, 3 \* -2,
+**Contoh** :  
++ x\*2
++ 3 \* -2 * x
++ 3 * x^4 * -2^1 * 0 (gunakan spasi untuk mempermudah penulisan) 
+###
 
 ## Aturan Masukkan Interval (x)
 
