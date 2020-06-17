@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style type="text/css">
+      .powerrr {
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+      }
+
+
+      .fa {
+        padding: 10px;
+        font-size: 50px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      /* Add a hover effect if you want */
+      .fa:hover {
+        opacity: 0.7;
+      }
+
+      /* Set a specific color for each brand */
+
+      /* Facebook */
+      .fa-facebook {
+        background: #333333;
+        color: white;
+      }
+
+      /* Twitter */
+      .fa-twitter {
+        background: #333333;
+        color: white;
+      }
+
+      hr { 
+        display: block;
+        margin-bottom: 0.5em;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-style: inset;
+        border-top: 2px solid #777;
+      } 
+            /* The side navigation menu */
+      .sidenav {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1031; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+      }
+
+      /* The navigation menu links */
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      /* When you mouse over the navigation links, change their color */
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      /* Position and style the close button (top right corner) */
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap styles -->
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional theme -->
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Sticky Footer -->
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bs-sticky-footer.css" rel="stylesheet">
+    
+    <!-- Custom styles -->
+    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed -->
+    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div id="wrap">
+      
+      <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->      
+
+      <div id="mySidenav" class="sidenav" style="background: rgb(105,33,138); background: linear-gradient(0deg, rgba(105,33,138,1) 0%, rgba(51,51,51,1) 24%, rgba(29,28,28,1) 100%);">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">
+          <span class="glyphicon glyphicon-fire" style="margin-right: 10px;"></span>
+          Games
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-book" style="margin-right: 10px;"></span>
+          Ebooks
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-picture" style="margin-right: 10px;"></span>
+          Posts
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-heart" style="margin-right: 10px;"></span>
+          Partners
+        </a>
+        <hr style="border-top: 2.5px solid #777; margin-top: 10px; margin-bottom: 10px;">
+        <p style="text-align: center; color: #777; font-size: 18px;">About Us</p>
+        <p style="text-align: center; color: #777; font-size: 16px; padding-right: 25px; padding-left: 25px;">
+          <b>Aneechan</b> is a simple blog dedicated to games, notes and reading documents.
+        </p>
+        <hr style="border-top: 2.5px solid #777; margin-top: 15px; margin-bottom: 10px;">
+        <p style="text-align: center; color: #777; font-size: 18px;">
+          Follow Us
+        </p>
+        <a href="#" style="text-align: center; padding: 0px; padding-top: 10px; margin-bottom: 20px;">
+          <img style="text-align: center;" src="https://i.ibb.co/Vg2qmtS/github64px.png" alt="Github Logo" title="Github Logo">
+        </a>
+        <a style="text-align: center; color: #777; font-size: 12px; padding-right: 25px; padding-left: 25px;">
+          <span class="glyphicon glyphicon-link" style="margin-right: 10px;"></span>
+          https://github.com/aneechan/
+        </a> 
+      </div>
+      <!--end side bar-->
+
+      <nav class="navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="row">
+          <div class="col-xs-4 col-sm-4 col-md-4">
+            <button type="button" class="navbar-toggle" onclick="openNav()" style="display: block; float: left;">
+              <span class="icon-bar" style="background-color: #777;"></span>
+              <span class="icon-bar" style="background-color: #777;"></span>
+              <span class="icon-bar" style="background-color: #777;"></span> 
+            </button>
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-4" style="text-align: center;">
+            <div class="navbar-header" style="float: left; padding-top: 15px; padding-bottom: 15px; padding-right: 0px; padding-left: 0px; text-align: center; width: 100%;">
+              <a class="navbar-brand" style="float: none; padding-left: 0px; padding-right: 0px;" href="{{ HOME_PATH }}">
+                {{ site.title }}
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-4">
+            <a href="#"  data-target="#peringatanbuatroom" data-toggle="modal">
+              <h4 style="margin: 15px; color: #777; float: right;">
+                <span class="glyphicon glyphicon-send"></span>
+              </h4>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <script type="text/javascript">
+      /* Set the width of the side navigation to 250px */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "white";
+      }
+      </script>
+
+
+      <div class="modal fade" id="peringatanbuatroom" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="background: rgb(105,33,138); background: linear-gradient(0deg, rgba(105,33,138,1) 0%, rgba(40,40,40,1) 93%);">
+              <button class="close" data-dismiss="modal" type="button">
+                &times;
+              </button>
+              <h4 class="modal-title" style="color: #ffffff;">
+                <span class="glyphicon glyphicon-send">
+                </span>
+                Sharing is Beautiful
+              </h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-xs-6 col-md-6 col-lg-6">
+                  <a  href="https://www.facebook.com/sharer/sharer.php?u=https://aneechan.github.io" style="text-decoration: none;">
+                    <span class="fa fa-facebook" style="margin-right: 10px;"></span>
+                    <b style="font-size:16px; color: #333333;">
+                      Facebook
+                    </b>
+                  </a>
+                </div>
+                <div class="col-xs-6 col-md-6 col-lg-6">
+                  <a href="https://twitter.com/home?status=https://aneechan.github.io A simple blog to games, notes and reading documents." style="text-decoration: none;">
+                    <span class="fa fa-twitter" style="margin-right: 10px;"></span>
+                    <b style="font-size: 16px; color: #333333;">Twitter</b>
+                  </a>
+                </div>
+              </div>
+              <hr>
+              <div class="input-group" style="margin-top: 10px;">  
+                <span class="input-group-addon" style="background: rgb(83,83,83); background: linear-gradient(0deg, rgba(83,83,83,1) 0%, rgba(28,28,28,1) 92%); border-color: #000; color: #ffffff;">
+                  <span class="glyphicon glyphicon-link">
+                  </span>
+                </span>
+                <input name="nama_room" class="form-control" id="myInput" checked="form-control" type="text" value="https://aneechan.github.io" style="border-color: #000;">
+                <span class="input-group-addon" style="background: rgb(83,83,83); background: linear-gradient(0deg, rgba(83,83,83,1) 0%, rgba(28,28,28,1) 92%); border-color: #000; color: #ffffff;">
+                  <a onclick="myFunction()" style="color: #ffffff;">
+                    Copy
+                  </a>
+                </span>
+              </div>
+              <div id="noticecopy" class="alert alert-success alert-dismissable" style="margin-top: 10px; margin-bottom: 0px; display: none;">
+                <button class="close" data-dismiss="alert" type="button">
+                  &times;
+                </button>
+                <b>
+                  Great!
+                </b>
+                Successfully copied link
+              </div>
+            </div>
+            <div class="modal-footer" style="margin-top: 0px;">
+              <button class="btn btn-primary" data-dismiss="modal" type="button" style="background: rgb(83,83,83); background: linear-gradient(0deg, rgba(83,83,83,1) 0%, rgba(28,28,28,1) 92%); border-color: #000;">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+      function myFunction() {
+      /* Get the text field */
+        var copyText = document.getElementById("myInput");
+      /* Select the text field */
+        copyText.select(); 
+        copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+      /* Copy the text inside the text field */
+        document.execCommand("copy");
+      /* Alert the copied text */
+        document.getElementById("noticecopy").style.display = "block";
+      }
+      </script>
+      <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+      <div class="container" style="margin-top:50px; font-size:20px;">
+        {{ content }}
+      </div>
+    </div>
+      <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+    <div class="row" style="background: rgb(105,33,138); background: linear-gradient(0deg, rgba(105,33,138,1) 0%, rgba(40,40,40,1) 93%); margin-left:0px; margin-right:0px;">
+      <div class="col-md-6 col-lg-6">
+        <p style="color: #ffffff; font-size: 16px; margin-left: 15px; margin-top: 15px; margin-bottom: 15px;">
+          This blog powered by :
+        </p>
+        <div class="row">
+          <div class="col-xs-3 col-md-3" style="text-align: center; padding: 0px; padding-left: 15px;">
+            <img class="powerrr" style="height: 40px; width: 40px;" src="https://i.ibb.co/Vg2qmtS/github64px.png" alt="Github Logo" title="Github Logo">
+            <p style="color: #ffffff; font-size: 12px;">
+              GitHub
+            </p>
+          </div>
+          <div class="col-xs-3 col-md-3" style="text-align: center; padding: 0px;">
+            <img class="powerrr" style="height: 40px; width: 50px;" src="https://i.ibb.co/ZNt2Smf/jekyll.png" alt="Github Logo" title="Github Logo">
+            <p style="color: #ffffff; font-size: 12px;">
+              Jekyll
+            </p>
+          </div>
+          <div class="col-xs-3 col-md-3" style="text-align: center; padding: 0px;">
+            <img class="powerrr" style="height: 40px; width: 40px;" src="https://i.ibb.co/gzVyMZv/bootstrap.png" alt="Github Logo" title="Github Logo">
+            <p style="color: #ffffff; font-size: 12px;">
+              Bootstrap
+            </p>
+          </div>
+          <div class="col-xs-3 col-md-3" style="text-align: center; padding: 0px; padding-right: 15px;">
+            <img class="powerrr" style="height: 40px; width: 40px;" src="https://i.ibb.co/TKYSY5N/profematika.png" alt="Github Logo" title="Github Logo">
+            <p style="color: #ffffff; font-size: 12px;">
+              Profematika
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <hr style="margin-left: 15px; margin-right: 0px; margin-bottom: 0px;">
+        <p style="color: #ffffff; font-size: 16px; margin-left: 20px; margin-top: 20px; margin-right: 20px; text-align: center;">Aneechan's blog is free and open source under the 
+          <a href="https://opensource.org/licenses/mit-license.html" style="color: #f53a3a;">MIT license</a>. Everyone can access and download all content in this blog.
+        </p>
+        <p style="color: #ffffff; font-size: 16px; margin-left: 20px; margin-right: 20px; text-align: center;">Dark themes by Rivaldo
+        </p>
+      </div>
+    </div>
+
+    <!--@@@@@@@@@@@@@@@@@@@@@@@-->
+
+    {% include JB/analytics %}
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
